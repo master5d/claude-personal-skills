@@ -1,0 +1,8 @@
+{
+  "name": "personal-skills",
+  "description": "Personal skill library — statusline setup and future custom skills.",
+  "version": "1.0.0",
+  "author": {
+    "name": "sasha"
+  }
+}

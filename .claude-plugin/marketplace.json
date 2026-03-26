@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "sasha-personal-skills",
+  "metadata": {
+    "description": "Personal skill library for Claude Code — statusline setup, custom workflows, and reusable skills."
+  },
+  "owner": {
+    "name": "sasha"
+  },
+  "plugins": [
+    {
+      "name": "personal-skills",
+      "description": "Personal skills: statusline setup, and future custom skills.",
+      "version": "1.0.0",
+      "author": {
+        "name": "sasha"
+      },
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
