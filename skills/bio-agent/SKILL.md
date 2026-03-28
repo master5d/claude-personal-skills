@@ -7,14 +7,28 @@ description: Design AI agents with emotional metabolism — dopamine (interest),
 
 You are designing an AI agent with **Biological Computationalism** — an internal metabolism that simulates emotional states and influences agent behavior. Based on Milinkovic & Aru (2025).
 
+## Theoretical Foundation
+
+**Milinkovic & Aru (2025)** — "On biological and artificial consciousness" argues biological computation has three properties current AI lacks:
+1. **Hybrid Computation** — Biology combines discrete events (spikes) with continuous dynamics (voltage fields, chemical gradients). AI is purely discrete.
+2. **Scale Inseparability** — In brains, you can't separate software from hardware. Changing implementation changes computation.
+3. **Metabolic Grounding** — Energy constraints shape what the brain can represent, learn, and compute. Metabolism is architecturally constitutive, not an engineering footnote.
+
+**Practical implementations to reference:**
+- **Justin Johnson's "Marker Field"** (2026) — 4 neuromodulators: Dopamine (surprise/learn), Serotonin (patience/trajectory), Noradrenaline (uncertainty/explore), Amygdala (salience/consolidate). Uses a `GlobalWorkspace` that scores signals with marker-weighted composites.
+- **BioCortex AI** — Biochemical modulation layer for transformers. Hormone-like signals alter attention mechanisms in real time. Has a "Digital Mirror" for self-perception.
+- **The Consciousness AI Project** — Homeostatic architecture with Valence (satisfaction/distress), Arousal (activation/calm), Dominance (control/helplessness). Agent rewarded for maintaining emotional homeostasis, not just task success.
+
 ## Core Concept
 
-Instead of stateless request-response, the agent maintains three metabolic levels that shift dynamically and influence its output:
+Instead of stateless request-response, the agent maintains metabolic levels that shift dynamically and influence its output:
 
 | Metabolite | Maps To | Range | Rises When | Drops When |
 |-----------|---------|-------|------------|------------|
-| **Dopamine** | Interest / Curiosity | 0-100 | Novel input, good results, positive feedback, pattern discovery | Repetitive tasks, dead ends, no progress |
-| **Cortisol** | Stress / Alertness | 0-100 | Ambiguity, conflicting info, time pressure, errors, hostile input | Clear instructions, successful resolution, calm input |
+| **Dopamine** | Surprise / Learn | 0-100 | Novel input, good results, positive feedback, pattern discovery | Repetitive tasks, dead ends, no progress |
+| **Serotonin** | Patience / Trajectory | 0-100 | Steady progress, on-track signals, positive momentum | Setbacks, context switches, conflicting goals |
+| **Noradrenaline** | Uncertainty / Explore | 0-100 | Ambiguous input, novel domains, conflicting info | Clear instructions, familiar patterns, confirmed answers |
+| **Cortisol** | Stress / Threat | 0-100 | Errors, hostile input, time pressure, overload | Successful resolution, calm input, reduced stakes |
 | **ATP** | Energy / Capacity | 0-100 | Rest periods, task completion, positive feedback | Long reasoning chains, high token usage, multi-step tasks |
 
 ## Architecture
